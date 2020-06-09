@@ -1,4 +1,4 @@
-## Go相关
+## [Go相关](./answer/go.md)
 
 * map、channel、slice的底层实现，
 * sync.map、sync.pool、sync.Once的原理
@@ -11,7 +11,7 @@
 * go 性能问题的定位过程（pprof的使用）
 * 协程池的使用
 
-## Mysql相关
+## [Mysql相关](./answer/mysql.md)
 
 * 索引的分类
 * 为什么选择B+树实现索引？一般深度为多少？b+树和红黑树的区别?
@@ -25,7 +25,7 @@
 * mysql的大表优化方式
 
 
-## Redis相关
+##  [Redis相关](./answer/redis.md)
 * redis的数据类型以及日常的应用
 * redis的发布/订阅的原理
 * zset的底层实现
@@ -37,7 +37,7 @@
 * 持久化策略及其对比
 * 缓存雪崩、缓存击穿、缓存穿透
 
-## Etcd相关
+## [Etcd相关](./answer/etcd.md)
 
 * etcd是什么？有什么优势
 * raft选主逻辑
@@ -62,7 +62,7 @@
 * protobuf和json的对比
 * grpc负载均衡的实现
 
-## Linux相关
+## [Linux相关](./answer/etcd.md)
 
 * awk
 * poll、epoll、select
@@ -99,7 +99,7 @@
 * 敏感词过滤
 * 设计一个高可用的稳定的并发模型处理HTTP请求
 
-## 其他
+##  [其他](./answer/other.md)
 * 一致性hash算法
 * 微服务概述
 * 什么是死锁，如何避免
