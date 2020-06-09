@@ -44,7 +44,7 @@ func (l *LinkedList) InsertHeadLinkedList(linked *LinkedListNode) {
 		head := l.Head
 		linked.next = head.next
 		head.next = linked
-		l.Length--
+		l.Length++
 	}
 }
 
