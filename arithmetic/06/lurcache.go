@@ -37,6 +37,7 @@ func (q *QueueCache) Get(k interface{}) (val interface{}) {
 
 	if ks, isOk := q.IsExist(k); isOk {
 		val = q.Data[ks.(int)].value
+		q.len--
 	}
 	q.rwLock.RUnlock()
 	return -1
