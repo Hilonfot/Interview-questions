@@ -32,10 +32,11 @@ func NewQueueCache(cap int) *QueueCache {
 	return queue
 }
 
-func (q *QueueCache) Get(k interface{}) interface{} {
+func (q *QueueCache) Get(k interface{}) (val interface{}) {
 	q.rwLock.RLock()
+
 	if ks, isOk := q.IsExist(k); isOk {
-		return q.Data[ks.(int)].value
+		val = q.Data[ks.(int)].value
 	}
 	q.rwLock.RUnlock()
 	return -1
@@ -48,6 +49,7 @@ func (q *QueueCache) Put(k interface{}, v interface{}) {
 	q.rwLock.Lock()
 	q.Data = append(q.Data, NewQueueData(k, v))
 	q.rwLock.Unlock()
+	q.len++
 }
 
 func (q *QueueCache) IsExist(k interface{}) (interface{}, bool) {
