@@ -54,7 +54,7 @@
 * 数据存储原理
 * 数据类型
 
-## Grpc相关
+## [Grpc相关](./answer/grpc.md)
 
 * 相较于restful的优势
 * 数据交互方式
